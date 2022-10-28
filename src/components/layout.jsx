@@ -37,9 +37,19 @@ const Layout = ({ children, location }) => {
       <main className={cn(styles.main)}>{children}</main>
       <footer className={cn(styles.footer, "mt-auto text-white")}>
         <div className={styles.footerContent}>
-          {/* <div className={styles.copyright}>{t("footer.utbotCopyright")}</div> */}
-          <img src={youtubeIcon} width="60px" alt="YouTube icon"></img>
-          {/* <img src={githubIcon} width="45px" alt="GitHub icon"></img> */}
+          <div className={styles.copyright}>{t("footer.utbotCopyright")}</div>
+          <div>
+            <img
+              className={styles.githubIcon}
+              src={youtubeIcon}
+              alt="YouTube icon"
+            />
+            <img
+              className={styles.youtubeIcon}
+              src={githubIcon}
+              alt="GitHub icon"
+            />
+          </div>
         </div>
       </footer>
     </div>

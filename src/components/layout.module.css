@@ -44,20 +44,29 @@
 }
 
 .footer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
   background-color: var(--header-footer-bg);
-  height: 70px;
   font-family: var(--font-family-sans-serif);
 }
 
+.githubIcon {
+  width: 60px;
+}
+
+.youtubeIcon {
+  width: 45px;
+}
+
 .footerContent {
+  padding: 0 15px;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   font-size: var(--footer-text-font-size);
   font-weight: var(--footer-text-font-weight);
-  float: right;
 }
 
 .copyright {
+  font-size: 15px;
 }

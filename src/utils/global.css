@@ -5,3 +5,25 @@ html {
 details summary {
   cursor: pointer;
 }
+
+.overflow-guard {
+  border-radius: 5px;
+  border: 1px dashed rgb(165, 165, 165);
+}
+
+.dropdown-menu.show {
+  max-height: 65vh;
+  overflow: auto;
+
+  scrollbar-width: thin;
+  scrollbar-color: #00000099 #f9f9f9;
+}
+
+.dropdown-menu.show::-webkit-scrollbar {
+  background: #f9f9f9;
+}
+.dropdown-menu.show::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 40px;
+  border: 6px solid #f9f9f9;
+}
