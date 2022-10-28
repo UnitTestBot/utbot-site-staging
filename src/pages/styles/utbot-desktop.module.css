@@ -72,7 +72,7 @@
 }
 
 .generateAndRunTestsButton {
-  font-size: 16px;
+  font-size: 15px;
   height: 40px;
   background-color: var(--editor-background);
   border: none;
@@ -80,6 +80,14 @@
 
 .generateAndRunTestsButton:hover {
   background-color: #154681;
+}
+
+.generateAndRunTestsButton:active {
+  background-color: #154681 !important;
+}
+
+.generateAndRunTestsButton:focus {
+  background-color: #154681 !important;
 }
 
 .toolbarContainer {

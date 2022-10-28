@@ -1,3 +1,6 @@
+@import "./colors.css";
+@import "./fonts.css";
+
 html {
   overflow-y: overlay;
 }
@@ -12,18 +15,50 @@ details summary {
 }
 
 .dropdown-menu.show {
-  max-height: 65vh;
+  max-height: 75vh;
   overflow: auto;
 
   scrollbar-width: thin;
-  scrollbar-color: #00000099 #f9f9f9;
+  scrollbar-color: rgb(234, 234, 234) var(--dropdown-menu-bg);
 }
 
 .dropdown-menu.show::-webkit-scrollbar {
-  background: #f9f9f9;
+  background: var(--dropdown-menu-bg);
 }
+
 .dropdown-menu.show::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgb(234, 234, 234);
   border-radius: 40px;
-  border: 6px solid #f9f9f9;
+  border: 6px solid var(--dropdown-menu-bg);
+}
+
+.nav-item .dropdown-menu {
+  background: var(--dropdown-menu-bg);
+}
+
+.nav-item .dropdown-item {
+  color: var(--dropdown-menu-item);
+}
+
+.nav-item .dropdown-item:hover {
+  background: var(--dropdown-menu-item-hover);
+}
+
+.nav-item .dropdown-item::selection {
+  background: var(--dropdown-menu-item-hover);
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  background-color: rgb(39, 92, 39);
+}
+
+a.dropdown-toggle.nav-link {
+  color: #0000ff;
+}
+
+@media screen and (max-width: 799px) {
+  a.dropdown-toggle.nav-link {
+    color: #007bff;
+  }
 }

@@ -16,7 +16,6 @@ import {
   Tooltip,
 } from "react-bootstrap";
 import "./styles/page.css";
-import "./styles/utbot.css";
 import * as stylesDesktop from "./styles/utbot-desktop.module.css";
 import * as stylesMobile from "./styles/utbot-mobile.module.css";
 import Editor from "@monaco-editor/react";
