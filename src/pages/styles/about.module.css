@@ -1,0 +1,27 @@
+@import "../../utils/colors.css";
+@import "../../utils/fonts.css";
+
+.pageFlexContainer {
+  align-self: center;
+  padding: 2rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 1100px;
+}
+
+.technologiesList {
+  list-style-type: none;
+}
+
+.summary {
+  font-size: var(--medium-text-font-size);
+  font-weight: var(--medium-text-font-weight);
+}
+
+.list {
+  padding-left: 0;
+}
+
+.listDisc {
+  list-style-type: disc;
+}
