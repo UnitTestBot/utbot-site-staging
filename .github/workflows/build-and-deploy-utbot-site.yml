@@ -41,7 +41,7 @@ jobs:
         sudo rm -rf *
         sudo cp -r /usr/public/* .
         touch CNAME
-        echo "www.utbot.org" >> CNAME
+        echo "staging.utbot.org" >> CNAME
         git add .
         git commit -am "${{ github.event.head_commit.message }}"
         git push
